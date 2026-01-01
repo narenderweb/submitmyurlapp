@@ -1,0 +1,260 @@
+Build a complete production-ready full-stack SaaS website named:
+
+SUBMITMYURL.COM
+
+====================================================
+PURPOSE (SEO-OPTIMIZED)
+====================================================
+
+SUBMITMYURL.COM is a global website promotion platform where users can:
+
+- submit my url
+- submit website free
+- promote my website
+- submit url to search engines
+- get free backlinks
+- increase website traffic
+- get website visitors worldwide
+- submit blog for traffic
+- get dofollow backlink
+- use website submission sites for SEO growth
+
+The platform must be optimized for global SEO and organic traffic.
+
+Language: English only  
+Audience: Worldwide
+
+====================================================
+TECH STACK
+====================================================
+
+- Node.js + Express backend
+- HTML, CSS, Vanilla JavaScript
+- No frontend frameworks
+- In-memory DB or SQLite
+- PayPal payment integration
+- Nodemailer email system
+- SEO-friendly HTML structure
+
+====================================================
+PUBLIC PAGES (VISIBLE TO USERS)
+====================================================
+
+1. Home (index.html)
+2. Submit URL (submit.html)
+3. Pricing (pricing.html)
+4. Features (features.html)
+5. Contact (contact.html)
+6. Check Submission Status (status.html)
+7. Terms of Service (terms.html)
+8. Privacy Policy (privacy.html)
+
+====================================================
+ADMIN PAGES (HIDDEN – NOT INDEXED)
+====================================================
+
+Admin pages must NOT appear in:
+- Header
+- Footer
+- Sitemap
+
+Admin URLs:
+- /admin/login.html
+- /admin/dashboard.html
+
+Admin pages must be protected by login.
+Direct access without login must redirect to admin login.
+
+====================================================
+HOMEPAGE CONTENT (FULL SEO)
+====================================================
+
+Title:
+Submit My URL – Free Website Promotion & Backlinks
+
+Meta Description:
+Submit your website URL for free promotion, free backlinks, and increased website traffic worldwide.
+
+H1:
+Submit My URL – Free Website Promotion Platform
+
+Sections:
+
+Global Website Submission  
+Submit URL to search engines and website submission sites worldwide.
+
+Get Free Backlinks  
+Earn high-quality dofollow backlinks to boost SEO rankings.
+
+Increase Website Traffic  
+Get real website visitors from multiple countries organically.
+
+Website Promotion Free  
+Promote your website, blog, or app without spending money.
+
+Anti-Scam Protection  
+No spam, no adult, no gambling, no casino, no crypto websites.
+
+CTA Buttons:
+- Submit My URL
+- Submit Website Free
+
+====================================================
+SUBMIT URL PAGE
+====================================================
+
+Form fields:
+- Website Name
+- Website URL
+- Email Address
+- Short Description
+- Plan (Free / Pro / Business)
+- Hidden honeypot field
+
+SEO text on page must include:
+submit my url, submit website free, website promotion free, get free backlinks
+
+After submission show message:
+“Your website has been submitted successfully.
+Free plan approval takes 24–72 hours.
+You will receive an email once approved.”
+
+====================================================
+PRICING PAGE
+====================================================
+
+Free Plan:
+- Manual approval
+- Standard listing
+- Basic website promotion
+
+Pro Plan ($7):
+- Priority approval
+- Auto-approved
+- Homepage featured for 7 days
+- Dofollow backlink
+- Faster traffic
+
+Business Plan ($19):
+- Instant approval
+- Homepage featured for 30 days
+- Maximum exposure
+- Dofollow backlink
+- Global promotion
+
+Integrate PayPal buttons for Pro & Business plans.
+
+====================================================
+PAYPAL PAYMENT LOGIC
+====================================================
+
+On successful PayPal payment:
+- Automatically activate selected plan
+- Set status = approved
+- Assign featured_days (7 or 30)
+- Send confirmation email
+- Show success message
+- No manual admin action required
+
+====================================================
+ANTI-SCAM & SPAM SYSTEM
+====================================================
+
+Implement:
+- Honeypot bot protection
+- Blacklist keywords:
+  casino, gambling, betting, porn, adult, crypto, loan
+- Duplicate URL detection
+- Auto reject spam submissions
+
+====================================================
+SUBMISSION STATUS SYSTEM
+====================================================
+
+Create a status check page:
+User enters:
+- Email OR Website URL
+
+System returns:
+- Pending
+- Approved
+- Rejected
+
+====================================================
+EMAIL NOTIFICATION SYSTEM
+====================================================
+
+Use Nodemailer.
+
+Send emails:
+- Submission received
+- Approved
+- Rejected
+- Paid plan activated
+
+====================================================
+ADMIN SYSTEM (FULL CONTROL)
+====================================================
+
+Admin login with email & password stored in server config.
+
+Admin dashboard must show:
+- Total submissions
+- Pending submissions
+- Approved submissions
+- Rejected submissions
+- Today’s submissions
+
+Admin actions:
+- Approve Free plan
+- Reject with reason
+- Delete spam
+
+On approve/reject:
+- Update status
+- Send automatic email to user
+
+====================================================
+SEO REQUIREMENTS
+====================================================
+
+- Proper title tags
+- Meta descriptions
+- H1–H3 structure
+- Keyword-rich content
+- SEO-friendly URLs
+- No-index admin pages
+- Fast loading pages
+
+====================================================
+FILE STRUCTURE
+====================================================
+
+/server.js
+/public
+ ├── index.html
+ ├── submit.html
+ ├── pricing.html
+ ├── features.html
+ ├── contact.html
+ ├── status.html
+ ├── privacy.html
+ ├── terms.html
+ ├── css/style.css
+ ├── js/
+ │    ├── submit.js
+ │    ├── status.js
+ │    ├── admin-auth.js
+ └── admin/
+      ├── login.html
+      └── dashboard.html
+
+====================================================
+FINAL GOAL
+====================================================
+
+Create a fully functional SEO-optimized SaaS platform.
+Admin panel must remain hidden.
+Users must always receive clear feedback.
+Paid plans must auto-activate.
+Code must be deployable on Replit, GitHub, and Vercel.
