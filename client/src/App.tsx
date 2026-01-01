@@ -4,15 +4,38 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
+import { Layout } from "@/components/layout";
+
+import Home from "@/pages/home";
+import Submit from "@/pages/submit";
+import Pricing from "@/pages/pricing";
+import Features from "@/pages/features";
+import Contact from "@/pages/contact";
+import Status from "@/pages/status";
+import AdminLogin from "@/pages/admin-login";
+import AdminDashboard from "@/pages/admin-dashboard";
 
 function Router() {
   return (
-    <Switch>
-      {/* Add pages below */}
-      {/* <Route path="/" component={Home}/> */}
-      {/* Fallback to 404 */}
-      <Route component={NotFound} />
-    </Switch>
+    <Layout>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/submit" component={Submit} />
+        <Route path="/pricing" component={Pricing} />
+        <Route path="/features" component={Features} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/status" component={Status} />
+        
+        <Route path="/admin/login" component={AdminLogin} />
+        <Route path="/admin/dashboard" component={AdminDashboard} />
+
+        {/* Static pages usually just text */}
+        <Route path="/terms">Terms of Service Placeholder</Route>
+        <Route path="/privacy">Privacy Policy Placeholder</Route>
+        
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
   );
 }
 
